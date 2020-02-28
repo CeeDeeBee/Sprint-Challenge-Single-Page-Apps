@@ -1,0 +1,13 @@
+.search-form form {
+    display: flex;
+    justify-content: center;
+}
+
+.search-form form>* {
+    margin: 1%;
+    text-align: center;
+}
+
+#query-type {
+    margin-left: 1%;
+}
