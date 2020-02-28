@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./SearchForm.css";
 
 export default function SearchForm({ setQuery, setQueryType }) {
   const [currentSearch, setCurrentSearch] = useState('');

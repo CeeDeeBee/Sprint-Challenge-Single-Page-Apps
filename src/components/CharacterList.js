@@ -3,6 +3,7 @@ import Axios from "axios";
 import { Container, Row } from "reactstrap";
 import CharacterCard from "./CharacterCard";
 import SearchForm from "./SearchForm";
+import "./CharacterList.css";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
