@@ -103,7 +103,7 @@ Complete search component to your list views.
 - [ ] https://rickandmortyapi.com/api/location/ - docs
 - [ ] https://rickandmortyapi.com/api/episode/ - docs
 
-- [ ]  Wire up the `onSearch(name)` callback prop to support [querying the API](https://rickandmortyapi.com/documentation/#filter-characters). (To search for `rick`, you would request `/api/character/?name=rick`.)
+- [x]  Wire up the `onSearch(name)` callback prop to support [querying the API](https://rickandmortyapi.com/documentation/#filter-characters). (To search for `rick`, you would request `/api/character/?name=rick`.)
 - [ ]  Animate page transition and/or card loading.
 - [ ]  Persist search form field(s) by using the custom hook `useLocalStorage`.
 - [ ]  Add error handling for all async (axios/AJAX) calls. (Including some styled UI.)

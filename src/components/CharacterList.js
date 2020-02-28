@@ -12,13 +12,13 @@ export default function CharacterList() {
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
-    Axios.get("https://rickandmortyapi.com/api/character/")
+    Axios.get(`https://rickandmortyapi.com/api/character/?name=${query}`)
       .then(res => {
         setCharacterData(res.data)
         console.log(res);
       })
       .catch(err => console.log(err));
-  }, []);
+  }, [query]);
 
   return (
     <div>
@@ -27,11 +27,12 @@ export default function CharacterList() {
         <Container>
           <Row>
             {characterData.results.map(character => {
-              {
-                if (character.name.toLowerCase().includes(query)) {
-                  return <CharacterCard key={character.id} character={character} />
-                }
-              }
+              // {
+              //   if (character.name.toLowerCase().includes(query)) {
+              //     return <CharacterCard key={character.id} character={character} />
+              //   }
+              // }
+              return <CharacterCard key={character.id} character={character} />
             })}
           </Row>
         </Container>
