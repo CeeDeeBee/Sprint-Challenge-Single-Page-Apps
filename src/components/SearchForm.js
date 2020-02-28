@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function SearchForm() {
- 
+export default function SearchForm({ setQuery }) {
+
   return (
     <section className="search-form">
-     // Add a search form here
+      <input type="text" onChange={e => setQuery(e.target.value.toLowerCase())} />
     </section>
   );
 }
